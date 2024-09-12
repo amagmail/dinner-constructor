@@ -13,7 +13,7 @@ public class DinnerConstructor {
 
     void build(int numberOfCombos, ArrayList<String> selectedTypes) {
         Random random = new Random();
-        int ind = 0;
+        int ind;
         for (int i = 1; i <= numberOfCombos; i++) {
             ArrayList<String> combination = new ArrayList<>();
             for (String selectedType : selectedTypes) {

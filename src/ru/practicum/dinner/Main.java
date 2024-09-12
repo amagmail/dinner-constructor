@@ -79,7 +79,7 @@ public class Main {
         while (!nextItem.isEmpty()) {
             if (dc.isNotExist(nextItem)) {
                 System.out.println("WARNING: Нет такого типа блюд. Пожалуйста введите другой!");
-            } else {
+            } else if (!selectedTypes.contains(nextItem)) {
                 selectedTypes.add(nextItem);
             }
             nextItem = scanner.nextLine();
