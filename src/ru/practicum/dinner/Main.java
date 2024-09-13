@@ -49,7 +49,6 @@ public class Main {
         if (!names.contains(name)) {
             names.add(name);
         }
-        dc.items.put(type, names);
     }
 
     private static void generateDishCombo() {
